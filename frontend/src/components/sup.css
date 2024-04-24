@@ -1,0 +1,148 @@
+.subscription_form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.5s ease;
+}
+
+.headingSub{
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.input_box {
+  margin-bottom: 20px;
+}
+
+.input_box label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input_box input,
+.input_box select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input_box button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input_box button:hover {
+  background-color: #45a049;
+}
+
+.maleRad {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.maleRad label {
+  margin-right: 10px;
+}
+
+.input_box input,
+.input_box select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.input_box input:focus,
+.input_box select:focus {
+  outline: none;
+  border-color: #4caf50;
+  transform: scale(1.02);
+}
+
+.maleRad label {
+  display: inline-block;
+  margin-right: 20px;
+  color: #666666;
+  font-size: 16px;
+  position: relative;
+}
+
+.maleRad input[type="radio"]:checked + label::before {
+  content: "";
+  display: none;
+  position: absolute;
+  /* top: 50%; */
+  /* left: 50%; */
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+
+  background-color: #4caf50;
+  animation: radioCheck 0.3s ease forwards;
+}
+
+@keyframes radioCheck {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.buttonSubscribe {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.buttonSubscribe:hover {
+  background-color: #45a049;
+  transform: translateY(-2px); /* Add a subtle lift effect on hover */
+}
